@@ -1,0 +1,9 @@
+alias=doskey /macros
+edalias=code "%USERPROFILE%\doskey.mac"
+.=explorer /e,.
+e..=explorer /e,..
+e~=explorer /e,"%userprofile%"
+e=explorer /e,$*
+cd~=cd /D "%userprofile%"
+cd..=cd ..
+setc=for /f "usebackq tokens=1,2* delims==" %a in (`"set"`) do @cecho {0A}%a{0C}={0E}%b{#}{\n}
